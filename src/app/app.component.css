@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+  
+#logo {
+  display: flex;
+  align-items: center;
+  width:20%;
+  margin: 2vw;
+}
+
+#logo img {
+  width: 20%
+}
+
+#logo h1 {
+  margin-left: 0.5em;
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#profile-pic {
+  margin-right: 14vh;
+}
+
+#vertical-line {
+  background-color: #444;
+  height: 1.2em;
+  width: 1px;
+}
+
+#horizontal-line {
+  border-bottom: 2px solid #444;
+  margin-left: 2vw;
+  width: 95%;
+}
+
+.nav ul {
+  margin: 1em;
+  list-style-type:none;
+  display:flex;
+  padding: 0;
+  overflow: hidden;
+  justify-content: flex;
+  align-items: center;
+}    
+
+.nav ul li {
+    padding: 1vw;
+    color: #338897;
+    text-decoration: underline;
+}
+
+.nav ul li:hover {
+    color: #25B6D0;
+}

@@ -1,0 +1,37 @@
+<div class="container" *ngIf="user">
+    <section class="series-section">
+        <section class="list-of-series-with-label">
+            <p class="series-section">Pendientes</p>
+            <section class="list-of-series">
+                <ul>
+                    <li *ngFor="let series of user.pendingSeries">
+                        {{ series.name }}
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="list-of-series-with-label">
+            <p class="series-section">Comenzadas</p>
+            <section class="list-of-series">
+                <ul>
+                    <li *ngFor="let series of user.startedSeries">
+                        {{ series.name }}
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="list-of-series-with-label">
+            <p class="series-section">Finalizadas</p>
+            <section class="list-of-series">
+                <ul>
+                    <li *ngFor="let series of user.finishedSeries">
+                        {{ series.name }}
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <div class="footer">
+        <p>This is the footer</p>
+    </div>
+</div>

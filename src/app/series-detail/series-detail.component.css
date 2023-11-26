@@ -1,0 +1,67 @@
+#list-alphabet ul {
+  margin: 1em;
+  list-style-type:none;
+  display:flex;
+  padding: 0;
+  overflow: hidden;
+  justify-content: flex;
+  align-items: center;
+}  
+
+#list-alphabet ul li {
+  padding: 0.5vw;
+  color: #338897;
+  cursor: pointer;
+}
+
+#list-alphabet ul li:hover,
+#list-alphabet ul li.selected {
+  color: #22bad5;
+}
+
+#horizontal-line {
+  border-bottom: 2px solid #666;
+  margin-left: 2vw;
+  width: 90%;
+}
+
+.list-of-series {
+  margin-top:6em;
+}
+
+.list-of-series ul {
+  list-style-type:none;
+}
+
+.list-of-series ul li {
+  margin-top: 2em;
+}
+
+.serie-details {
+  margin-top: 1em;
+  width: 60%;
+  background-color: #CFCFCF;
+  padding: 2em 5em 1em 0.8em;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin-left: auto;
+  margin-right: 8em;
+}
+
+#series-name {
+  cursor: pointer;
+}
+
+#agregar-text {
+  position: absolute;
+  left: 18em;
+  color: #338897;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+#search-component {
+  position: relative;
+  flex: auto;
+}
+
+#search-box {
+  padding: 10px;
+  border-radius: 0.6em;
+  border: 2px solid gray;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  margin: 0; 
+  padding: 0;
+  list-style-type: none;
+}
+
+.search-result li {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: black;
+  border-style: none solid solid;
+  border-width: 0px 2px 2px 2px;
+  border-color: gray;
+}
+
+.search-result li p {
+  margin:0;
+  padding: 0.6em 0.6em;
+}
+
+.search-result li p:hover {
+  background-color: #435A60;
+  color: white;
+}

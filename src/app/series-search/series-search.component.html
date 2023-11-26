@@ -1,0 +1,8 @@
+<div id="search-component">
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Search input"/>
+  <ul class="search-result" *ngIf="showList">
+    <li *ngFor="let series of series$ | async" (click)="selectSeries(series)">
+      <p>{{series.name}}</p>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,24 @@
+<section class="filters">
+    <div id="list-alphabet">
+        <ul>
+            <li *ngFor="let letter of letters" #letterItem [ngClass]="{ 'selected': isLetterSelected(letter)}" (click)="listSeriesStartWith(letterItem.textContent || '')">{{ letter }}</li>
+        </ul>
+    </div>
+
+    <app-series-search (selectedSeries)="onSeriesSelected($event)" class="search-bar"></app-series-search>
+</section>
+
+<div id="horizontal-line"></div>
+<section class="list-of-series">
+    <ul>
+        <li *ngFor="let series of listOfSeriesToShow; let i = index">
+            <span id="series-name" (click)="toggleDetails(i)">{{ series.name }}</span>
+            <span id="agregar-text" (click)="addSeriesToPendingSeries(i)">Agregar</span>
+            <div *ngIf="showDetails[i]" class="serie-details">
+                <p>{{ series.synopsis }}</p>
+                <p>Creadores: {{ formatSet(series.creators) }}</p>
+                <p>Actores: {{ formatSet(series.actors) }}</p>
+            </div>
+        </li>
+    </ul>
+</section>
